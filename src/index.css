@@ -1,13 +1,726 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.custom-gray {
+  background-color: #999999;
+}
+
+.hero {
+  background-color: #000000;
+  height: 689px;
+  background-image: url("./assets/Mask\ group.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.baze-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.42em;
+  color: #ffffff;
+}
+
+.get-degree {
+  width: 526px;
+  height: 146px;
+  left: 120px;
+  top: 347px;
+
+  font-family: "Capitolium";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 73px;
+}
+
+.deliver-quality {
+  width: 477px;
+  height: 54px;
+  left: 120px;
+  top: 508px;
+
+  font-family: "Rethink Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+  color: #ffffff;
+}
+
+.btn-view-courses {
+  padding: 8px 20px;
+  gap: 4px;
+
+  width: 154px;
+  height: 39px;
+
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #ffffff;
+}
+
+.btn-apply {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 20px;
+  gap: 4px;
+
+  width: 130px;
+  height: 39px;
+  left: 120px;
+  top: 611px;
+
+  background: #ebebeb;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #1a1a1a;
+}
+
+.admissions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 41px;
+
+  position: relative;
+  width: 100%;
+  height: 309px;
+}
+
+.admission-item {
+  padding: 40px 35px;
+  width: 373px;
+  height: 309px;
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.admission-text {
+  /* Frame 427318498 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 82px;
+
+  width: 302px;
+  height: 229px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.discover-bg {
+  /* Placeholder 1 */
+
+  width: 580px;
+  height: 423px;
+  left: 120px;
+  top: 1365px;
+
+  background: url("./assets/Placeholder\ 1.png");
+}
+
+.discover-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+  width: 580px;
+  height: 354px;
+  left: 740px;
+  top: 1365px;
+}
+
+.discover-heading {
+  width: 389px;
+  height: 26px;
+
+  font-family: "Rethink Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  /* identical to box height */
+
+  color: #999999;
+}
+
+.standout {
+  width: 392px;
+  height: 52px;
+
+  font-family: "Capitolium";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 52px;
+
+  color: #1a1a1a;
+}
+
+.discover-subtext {
+  /* Baze University delivers quality by having experienced International staff, superb teaching equipment, overseas external examiners, and first-rate buildings to guarantee standards. Baze aims to provide university education to International standards in Nigeria at about half the cost of sending a student to study abroad. */
+
+  width: 580px;
+  height: 189px;
+
+  font-family: "Rethink Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+  color: #4d4d4d;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.btn-brochure {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 20px;
+  gap: 4px;
+
+  width: 116px;
+  height: 39px;
+
+  border: 1px solid #4d4d4d;
+  border-radius: 5px;
+}
+
+.btn-readmore {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 20px;
+  gap: 4px;
+
+  width: 130px;
+  height: 39px;
+  color: #ffffff;
+  background: #4d4d4d;
+  border-radius: 5px;
+}
+
+.datti-bg {
+  /* Placeholder 1 */
+
+  width: 580px;
+  height: 614px;
+  left: 120px;
+  top: 1365px;
+
+  background: url("./assets/Placeholder\ 2.png");
+}
+
+.datti-name {
+  width: 580px;
+  height: 51px;
+  font-family: "Sacramento";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 51px;
+  color: #1a1a1a;
+}
+
+.extra-margin {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.programs-title {
+  /* OUR PROGRAMMES */
+  width: 389px;
+  height: 26px;
+  left: 120px;
+  top: 2697px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #999999;
+}
+
+.faculties-title {
+  width: 297px;
+  height: 52px;
+  left: 120px;
+  top: 2735px;
+  font-family: "Capitolium";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 52px;
+  color: #1a1a1a;
+}
+
+.faculties-grid {
+  width: 373px;
+  height: 438px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.faculty-img {
+  width: 373px;
+  height: 204px;
+}
+
+.faculty-info {
+  /* Frame 427318424 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 150px;
+  height: 19px;
+}
+
+.count {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #4d4d4d;
+  width: 88px;
+  height: 16px;
+}
+
+.programs-count {
+  /* Frame 427318424 */
+
+  /* Auto layout */
+
+  width: 112px;
+  height: 19px;
+}
+
+.faculty-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  width: 327px;
+
+  color: #1a1a1a;
+}
+
+.faculty-description {
+  font-family: "Rethink Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  /* or 18px */
+
+  color: #4d4d4d;
+}
+
+.faculty-box {
+  border: 1px solid #9999993d;
+}
+
+.apply-now {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+
+  color: #797979;
+}
+
+.admission {
+  height: 749px;
+  background-image: url("./assets/admission.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.admission-icon {
+  width: 42px;
+  height: 42px;
+}
+
+.student-alumni-section,
+.calender {
+  height: 665px;
+}
+
+.testim-title,
+.section-title {
+  color: #999999;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.stud-alumni,
+.section-name {
+  /* Student and Alumni Stories */
+
+  font-family: "Capitolium";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 110%;
+
+  color: #1a1a1a;
+}
+
+.alumni-rl {
+  height: 392px;
+}
+
+.alumni-right {
+  width: 580px;
+}
+
+.section-desc {
+  font-family: "Rethink Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #4d4d4d;
+}
+
+.section-body {
+  margin-top: 3rem;
+}
+
+.calender {
+  width: 580px;
+  height: 183px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.calender-title {
+  font-family: "Rethink Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 20px;
+  color: #3f3f3f;
+}
+
+.calender-dates {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #3f3f3f;
+}
+
+.event {
+  height: 665px;
+}
+
+.events-img {
+  width: 580px;
+  height: 315px;
+  background: #ffffff;
+  background-image: url("./assets/events.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.event-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 33px;
+
+  color: #4d4d4d;
+}
+
+.event-time {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+
+  color: #999999;
+}
+
+.date-badge {
+  /* Rectangle 58 */
+
+  position: absolute;
+  width: 141px;
+  height: 48px;
+  left: 218px;
+  top: 288px;
+
+  font-weight: 700;
+  background: #3a3738;
+}
+
+.date-badge-sm {
+  /* Rectangle 58 */
+
+  position: absolute;
+  width: 109px;
+  height: 37px;
+  left: 99px;
+  top: 183px;
+  font-weight: 700;
+  background: #3a3738;
+}
+
+.future-img {
+  height: 202px;
+  background: #ffffff;
+  background-image: url("./assets/future.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.educators-img {
+  height: 202px;
+  background: #ffffff;
+  background-image: url("./assets/educators.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.event-title-sm {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 33px;
+
+  color: #4d4d4d;
+}
+
+
+.view-btn {
+  width: 189px;
+  height: 39px;
+  background: #4D4D4D;
+  border-radius: 5px;
+  font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+color: #FFFFFF;
+}
+
+.box-img {
+  height: 222px;
+}
+
+.box-1 {
+  background-image: url("./assets/partnership.png");
+
+}
+
+.box-2 {
+  background-image: url("./assets/summit.png");
+}
+
+.box-3 {
+  background-image: url("./assets/wole.png");
+}
+
+.box-text {
+  height: calc(100% - 222px);
+} 
+
+.box-text-title {
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 110%;
+text-align: center;
+color: #8D8D8D;
+
+}
+
+.box-text-desc {
+  font-family: 'Rethink Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 23px;
+text-align: center;
+text-transform: capitalize;
+
+color: #4D4D4D;
+}
+
+.summary {
+  font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 110%;
+text-align: center;
+
+color: #8D8D8D;
+}
+
+.dots {
+  width: 58px;
+height: 7px;
+}
+
+.dot-dark {
+  background: #848484;;
+  width: 7px;
+height: 7px;
+}
+
+.dot-light {
+  width: 7px;
+height: 7px;
+background: #D9D9D9;
+}
+
+.faq-title {
+  font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 26px;
+/* identical to box height */
+
+color: #999999;
+
+}
+
+.faq-name {
+  font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 110%;
+color: #1A1A1A;
+}
+
+.faq-desc {
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 26px;
+
+color: #707070;
+}
+
+.question-box {
+width: 496.5px;
+height: 37px;
+}
+
+.question {
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+color: #4D4D4D;
+}
+
+.footer-icons {
+width: 168px;
+height: 28px;
+}
+
+.footer-copy {
+  font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 166%;
+/* or 33px */
+letter-spacing: 0.1px;
+
+color: #8D8D8D;
+}x
+
+.logo3 {
+  width: 85px;
+height: 81.32px;
+}
+
+.baze-address {
+font-style: normal;
+font-weight: 400;
+font-size: 19px;
+letter-spacing: 0.001em;
+color: #4D4D4D;
+}
+
+.quick-links {
+  font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 166%;
+/* identical to box height, or 50px */
+letter-spacing: 0.001em;
+
+color: #1A1A1A;
+}
+
+.quick-links-item {
+  font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 166%;
+/* or 33px */
+letter-spacing: 0.001em;
+
+color: #4D4D4D;
+}
+
+.list {
+  font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+/* or 27px */
+
+color: #4D4D4D;
 }
